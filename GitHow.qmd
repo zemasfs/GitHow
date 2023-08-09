@@ -1,5 +1,5 @@
 ---
-title: "Configurando Git e Netlify"
+title: "RStudio e Controle Remoto de Versões pelo Git"
 author: "José Maurício Schneedor FS"
 ---
 
@@ -30,7 +30,7 @@ author: "José Maurício Schneedor FS"
 
 1. git config --global --list
 
-### Criando um repositório no Github
+## Criando um repositório no Github
 
 1. Entra no Github;
 1. Vá em *Your Repositories* (menu que abre no canto superior direito);
@@ -58,7 +58,7 @@ author: "José Maurício Schneedor FS"
 
 1. Copie essa senha para a próxima etapa, a de *linkar* o projeto local no *RStudio* para acesso remoto no Github.
 
-### *Linkar* o repositório criado ao RStudio
+### *Linkando* o repositório criado ao RStudio
 
 1. Cria o projeto no RStudio, e com *Version Control*
 1. Vá à pasta criada e digite os comandos que a página do Github oferece, na sequência:
@@ -73,7 +73,7 @@ author: "José Maurício Schneedor FS"
   
   *Obs:* Um *commit* nada mais é do que a imagem das alterações locais realizadas em um projeto, ou seja, um registro de suas alterações. A cada *commit* são geradas remotamente no Github uma versão diferente do projeto, e que pode ser recuperada em caso de falhas, por exemplo.
 
-### Sincronizando o projeto do RStudio com o repositório no Github
+## Sincronizando o projeto do RStudio com o repositório no Github
 
 1. Reinicie o *RStudio* para aparecer a aba *Git* (se já não apareceu antes);
 1. Faça alguma modificação no arquivo do projeto (*md*, *rmd*, *qmd*).
@@ -82,9 +82,18 @@ author: "José Maurício Schneedor FS"
 1. Clique em *Commit*, e digite qualquer observação no campo; 
 1. Clique em *Commit* da nova janela;
 1. Clique em *Push*, para envio à nuvem;
+1. Digite o *username* para acesso ao Github;
 1. Digite o *token* obtido na seção anterior (senha) 
 1. Feche as janelas. 
-  
+
+## Clonando um repositório do Git como projeto no RStudio
+
+1. Crie o projeto em *File -> New Project*;
+1. Escolha *Version Control*;
+1. Selecione *Git*;
+1. Cole o caminho do *link* para o repositório (*Repository URL*);
+1. Crie um diretório para o projeto (*Create Project*);
+
 ## Deletando um repositório
 1. Entra no repositório no Git;
 1. Vá em *Settings*, canto superior direito;
