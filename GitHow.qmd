@@ -4,7 +4,7 @@ title: "Configurando GitHub e Netlify"
 
 ## Configurando GitHub
 
-### Instalando e configurando o Git no PC:
+### Instalando e configurando  o Git no PC:
 
 |       Num Terminal, digite:
 1. sudo apt-get update
@@ -19,3 +19,9 @@ title: "Configurando GitHub e Netlify"
 
 1. git config --global --list
 
+1. install.packages("usethis")
+1. usethis::use_git_config(user.name = "zemasfs",
+                        user.email = "zemasfs@gmail.com")
+1. usethis::use_git()
+
+1. usethis::use_github()
