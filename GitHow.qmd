@@ -1,0 +1,14 @@
+---
+title: "Configurando GitHub e Netlify"
+---
+
+## Configurando GitHub
+
+### Instalando e configurando o Git no PC:
+1. sudo apt-get update
+1. sudo apt-get install git
+1. git version    ; conferindo a instalação
+1. git config --global user.name "login de usuário"    ; ex:jaime
+1. git config --global user.email "email do usuário"    ; ex: jaime@gmail.com
+1. git config user.name ;  conferindo username
+1. git config user.email ;  conferindo email
