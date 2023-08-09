@@ -15,7 +15,7 @@ author: "José Maurício Schneedor FS"
 
 ## Configurando GitHub
 
-### Instalando e configurando  o Git no PC:
+### Instalando e configurando o Git no PC:
 
 |       Num Terminal, digite:
 1. sudo apt-get update
@@ -88,11 +88,13 @@ author: "José Maurício Schneedor FS"
 
 ## Clonando um repositório do Git como projeto no RStudio
 
+1. Crie o repositório no *Git*;
 1. Crie o projeto em *File -> New Project*;
 1. Escolha *Version Control*;
 1. Selecione *Git*;
 1. Cole o caminho do *link* para o repositório (*Repository URL*);
 1. Crie um diretório para o projeto (*Create Project*);
+1. Clique em *Create Project*.
 
 ## Deletando um repositório
 1. Entra no repositório no Git;
