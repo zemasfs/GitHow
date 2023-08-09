@@ -2,6 +2,11 @@
 title: "Configurando GitHub e Netlify"
 ---
 
+
+## Criando um projeto no RStudio com controle remoto de versões pelo Github
+
+1. Crie o projeto em *File -> New Project*
+
 ## Configurando GitHub
 
 ### Instalando e configurando  o Git no PC:
@@ -60,8 +65,10 @@ title: "Configurando GitHub e Netlify"
 1. Reinicie o *RStudio* para aparecer a aba *Git* (se já não apareceu antes);
 1. Faça alguma modificação no arquivo do projeto (*md*, *rmd*, *qmd*).
 1. Salve o arquivo e/ou renderize (deverá aparecer arquivo na aba *Git* que foi editado localmente);
-1. Clique na seta
-1. 
+1. Selecione os arquivos da aba *Git* para sincronização remota (um bom e velho clique  +  Ctrl-A seleciona todos);
+1. Clique em *Commit*, e digite qualquer observação no campo; 
+1. Clique em *Push*, para envio à nuvem;
+1. Digite o *token* obtido na seção anterior (senha) 
   
 ## Deletando um repositório
 1. Entra no repositório no Git;
