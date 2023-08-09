@@ -19,9 +19,27 @@ title: "Configurando GitHub e Netlify"
 
 1. git config --global --list
 
-1. install.packages("usethis")
-1. usethis::use_git_config(user.name = "zemasfs",
-                        user.email = "zemasfs@gmail.com")
-1. usethis::use_git()
+### Criando um repositório no Github
 
-1. usethis::use_github()
+1. Entra no Github;
+1. Vá em *Your Repositories* (menu que abre no canto superior direito);
+1. Clicar em *New*
+
+### *Linkar* o repositório criado ao RStudio
+
+1. Cria o projeto no RStudio, e com *Version Control*
+1. Vá à pasta criada e digite os comandos na sequência:
+  1. 
+
+<!-- 1. install.packages("usethis") -->
+<!-- 1. usethis::use_git_config(user.name = "zemasfs", -->
+<!--                         user.email = "zemasfs@gmail.com") -->
+<!-- 1. usethis::use_git() -->
+
+<!-- 1. usethis::use_github() -->
+
+
+## Deletando um repositório
+1. Entra no repositório no Git;
+1. Vá em *Settings*, canto superior direito;
+1. Lá embaixo tem a opção de *delete*
