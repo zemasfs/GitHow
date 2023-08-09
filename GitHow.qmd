@@ -76,12 +76,12 @@ author: "José Maurício Schneedor FS"
    - Pode-se colar num Terminal as linhas globalmente, executando-as uma única vez:
    
 ```{}
-echo "# biqBook" >> README.md
+echo "# nomeDoRepositorio" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/zemasfs/biqBook.git
+git remote add origin https://github.com/nomeDoUsuario/nomeDoRepositorio.git
 git push -u origin main
 ```
 
