@@ -87,13 +87,38 @@ ul.task-list li input[type="checkbox"] {
 <li>Clicar em <em>New</em></li>
 </ol>
 </section>
+<section id="definindo-um-token-para-acesso-ao-repositório" class="level3">
+<h3 class="anchored" data-anchor-id="definindo-um-token-para-acesso-ao-repositório">Definindo um <em>Token</em> para acesso ao repositório</h3>
+<ol type="1">
+<li>No Github, vá em:</li>
+</ol>
+<ul>
+<li>Settings</li>
+<li>Developer Settings</li>
+<li>Personal access tokens</li>
+</ul>
+<ol type="1">
+<li>Escolha uma das opções (ex: “Tokens classic”)</li>
+<li><em>Generate new token</em></li>
+<li>Copie essa senha para a próxima etapa, a de <em>linkar</em> o projeto local no <em>RStudio</em> para acesso remoto no Github.</li>
+</ol>
+</section>
 <section id="linkar-o-repositório-criado-ao-rstudio" class="level3">
 <h3 class="anchored" data-anchor-id="linkar-o-repositório-criado-ao-rstudio"><em>Linkar</em> o repositório criado ao RStudio</h3>
 <ol type="1">
 <li>Cria o projeto no RStudio, e com <em>Version Control</em></li>
-<li>Vá à pasta criada e digite os comandos na sequência:</li>
-<li></li>
+<li>Vá à pasta criada e digite os comandos que a página do Github oferece, na sequência:</li>
 </ol>
+<ul>
+<li>echo “# nome.do.repositório” &gt;&gt; README.md</li>
+<li>git init</li>
+<li>git add README.md</li>
+<li>git commit -m “first commit”</li>
+<li>git branch -M main</li>
+<li>git remote add origin https://github.com/nomeDaContaGit/NomeRepositorioGit.git ; esse é o <em>link</em> oferecido pelo próprio Git</li>
+<li>git remote add origin</li>
+<li>digitar a senha (<em>token</em>) obtido anteriormente no <em>site</em> do Github</li>
+</ul>
 <!-- 1. install.packages("usethis") -->
 <!-- 1. usethis::use_git_config(user.name = "zemasfs", -->
 <!--                         user.email = "zemasfs@gmail.com") -->

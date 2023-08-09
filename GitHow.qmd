@@ -25,12 +25,6 @@ title: "Configurando GitHub e Netlify"
 1. Vá em *Your Repositories* (menu que abre no canto superior direito);
 1. Clicar em *New*
 
-### *Linkar* o repositório criado ao RStudio
-
-1. Cria o projeto no RStudio, e com *Version Control*
-1. Vá à pasta criada e digite os comandos na sequência:
-  1. 
-
 <!-- 1. install.packages("usethis") -->
 <!-- 1. usethis::use_git_config(user.name = "zemasfs", -->
 <!--                         user.email = "zemasfs@gmail.com") -->
@@ -38,8 +32,39 @@ title: "Configurando GitHub e Netlify"
 
 <!-- 1. usethis::use_github() -->
 
+### Definindo um *Token* para acesso ao repositório
 
+1. No Github, vá em:
+ + Settings
+ + Developer Settings
+ + Personal access tokens
+1. Escolha uma das opções (ex: "Tokens classic")
+1. *Generate new token*
+1. Copie essa senha para a próxima etapa, a de *linkar* o projeto local no *RStudio* para acesso remoto no Github.
+
+### *Linkar* o repositório criado ao RStudio
+
+1. Cria o projeto no RStudio, e com *Version Control*
+1. Vá à pasta criada e digite os comandos que a página do Github oferece, na sequência:
+  + echo "# nome.do.repositório" >> README.md
+  +  git init
+  + git add README.md
+  + git commit -m "first commit"
+  + git branch -M main
+  + git remote add origin https://github.com/nomeDaContaGit/NomeRepositorioGit.git    ; esse é o *link* oferecido pelo próprio Git
+  + git remote add origin 
+  + digite a senha (*token*) obtida anteriormente no *site* do Github
+
+### Sincronizando o projeto do RStudio com o repositório no Github
+
+1. Reinicie o *RStudio* para aparecer a aba *Git* (se já não apareceu antes);
+1. Faça alguma modificação no arquivo do projeto (*md*, *rmd*, *qmd*).
+1. Salve o arquivo e/ou renderize (deverá aparecer arquivo na aba *Git* que foi editado localmente);
+1. Clique na seta
+1. 
+  
 ## Deletando um repositório
 1. Entra no repositório no Git;
 1. Vá em *Settings*, canto superior direito;
 1. Lá embaixo tem a opção de *delete*
+
