@@ -98,6 +98,6 @@ author: "José Maurício Schneedor FS"
 
 ## Deletando um repositório
 1. Entra no repositório no Git;
-1. Vá em *Settings*, canto superior direito;
+1. Vá em *Settings* do repositório (menu superior), e não geral, que fica no canto superior direito;
 1. Lá embaixo tem a opção de *delete*
 
