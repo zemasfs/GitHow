@@ -1,11 +1,17 @@
 ---
-title: "Configurando GitHub e Netlify"
+title: "Configurando Git e Netlify"
+author: "José Maurício Schneedor FS"
 ---
 
 
-## Criando um projeto no RStudio com controle remoto de versões pelo Github
+## Criando um projeto no RStudio para versionamento de código (controle remoto de versões) pelo Git
 
-1. Crie o projeto em *File -> New Project*
+1. Crie o projeto em *File -> New Project*;
+1. Escolha New *Directory*;
+1. Escolha *Quarto project*;
+1. Digite o nome do diretória a criar;
+1. Selecione a caixa *Create a git repository*;
+1. Escolha se deseja um editor de texto simples ao iniciar ou um editor visual (*use visual markdown editor*).
 
 ## Configurando GitHub
 
@@ -45,6 +51,11 @@ title: "Configurando GitHub e Netlify"
  + Personal access tokens
 1. Escolha uma das opções (ex: "Tokens classic")
 1. *Generate new token*
+ + Escreva uma nota sobre o token;
+ + Coloque um período de expiração;
+ + Selecione *repo* para os repositórios
+1. Clique em *Generate token*
+
 1. Copie essa senha para a próxima etapa, a de *linkar* o projeto local no *RStudio* para acesso remoto no Github.
 
 ### *Linkar* o repositório criado ao RStudio
@@ -59,6 +70,8 @@ title: "Configurando GitHub e Netlify"
   + git remote add origin https://github.com/nomeDaContaGit/NomeRepositorioGit.git    ; esse é o *link* oferecido pelo próprio Git
   + git remote add origin 
   + digite a senha (*token*) obtida anteriormente no *site* do Github
+  
+  *Obs:* Um *commit* nada mais é do que a imagem das alterações locais realizadas em um projeto, ou seja, um registro de suas alterações. A cada *commit* são geradas remotamente no Github uma versão diferente do projeto, e que pode ser recuperada em caso de falhas, por exemplo.
 
 ### Sincronizando o projeto do RStudio com o repositório no Github
 
@@ -67,8 +80,10 @@ title: "Configurando GitHub e Netlify"
 1. Salve o arquivo e/ou renderize (deverá aparecer arquivo na aba *Git* que foi editado localmente);
 1. Selecione os arquivos da aba *Git* para sincronização remota (um bom e velho clique  +  Ctrl-A seleciona todos);
 1. Clique em *Commit*, e digite qualquer observação no campo; 
+1. Clique em *Commit* da nova janela;
 1. Clique em *Push*, para envio à nuvem;
 1. Digite o *token* obtido na seção anterior (senha) 
+1. Feche as janelas. 
   
 ## Deletando um repositório
 1. Entra no repositório no Git;
