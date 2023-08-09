@@ -150,7 +150,14 @@ ul.task-list li input[type="checkbox"] {
 <li>git remote add origin</li>
 <li>digite a senha (<em>token</em>) obtida anteriormente no <em>site</em> do Github</li>
 </ul>
-<p><em>Obs:</em> Um <em>commit</em> nada mais é do que a imagem das alterações locais realizadas em um projeto, ou seja, um registro de suas alterações. A cada <em>commit</em> são geradas remotamente no Github uma versão diferente do projeto, e que pode ser recuperada em caso de falhas, por exemplo.</p>
+<p><em>Obs:</em> - Um <em>commit</em> nada mais é do que a imagem das alterações locais realizadas em um projeto, ou seja, um registro de suas alterações. A cada <em>commit</em> são geradas remotamente no Github uma versão diferente do projeto, e que pode ser recuperada em caso de falhas, por exemplo. - Pode-se colar num Terminal as linhas globalmente, executando-as uma única vez:</p>
+<pre><code>echo "# biqBook" &gt;&gt; README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/zemasfs/biqBook.git
+git push -u origin main</code></pre>
 </section>
 </section>
 <section id="sincronizando-o-projeto-do-rstudio-com-o-repositório-no-github" class="level2">
@@ -184,8 +191,8 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="deletando-um-repositório">Deletando um repositório</h2>
 <ol type="1">
 <li>Entra no repositório no Git;</li>
-<li>Vá em <em>Settings</em>, canto superior direito;</li>
-<li>Lá embaixo tem a opção de <em>delete</em></li>
+<li>Vá em <em>Settings</em> do repositório (menu superior), e não geral, que fica no canto superior direito;</li>
+<li>Lá embaixo tem a opção de <em>delete</em>.</li>
 </ol>
 </section>
 

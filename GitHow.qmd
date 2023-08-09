@@ -71,7 +71,20 @@ author: "José Maurício Schneedor FS"
   + git remote add origin 
   + digite a senha (*token*) obtida anteriormente no *site* do Github
   
-  *Obs:* Um *commit* nada mais é do que a imagem das alterações locais realizadas em um projeto, ou seja, um registro de suas alterações. A cada *commit* são geradas remotamente no Github uma versão diferente do projeto, e que pode ser recuperada em caso de falhas, por exemplo.
+  *Obs:* 
+  - Um *commit* nada mais é do que a imagem das alterações locais realizadas em um projeto, ou seja, um registro de suas alterações. A cada *commit* são geradas remotamente no Github uma versão diferente do projeto, e que pode ser recuperada em caso de falhas, por exemplo.
+   - Pode-se colar num Terminal as linhas globalmente, executando-as uma única vez:
+   
+```{}
+echo "# biqBook" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/zemasfs/biqBook.git
+git push -u origin main
+```
+
 
 ## Sincronizando o projeto do RStudio com o repositório no Github
 
@@ -99,5 +112,5 @@ author: "José Maurício Schneedor FS"
 ## Deletando um repositório
 1. Entra no repositório no Git;
 1. Vá em *Settings* do repositório (menu superior), e não geral, que fica no canto superior direito;
-1. Lá embaixo tem a opção de *delete*
+1. Lá embaixo tem a opção de *delete*.
 
